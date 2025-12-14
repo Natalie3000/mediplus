@@ -36,4 +36,4 @@ jobs:
            chmod 600 mykey.pem
            cat mykey.pem
 
-      - 
+      
