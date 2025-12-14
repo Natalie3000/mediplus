@@ -36,7 +36,7 @@ jobs:
            chmod 600 mykey.pem
            cat mykey.pem
 
-           ssh -o StrictHostKeyChecking=no -i .\mykey.pem ubuntu@13.221.165.24 "docker ps"
-           ssh -o StrictHostKeyChecking=no -i .\mykey.pem ubuntu@13.221.165.24 "hostnamectl"
+           ssh -o StrictHostKeyChecking=no -i mykey.pem ubuntu@13.221.165.24 "docker ps"
+           ssh -o StrictHostKeyChecking=no -i mykey.pem ubuntu@13.221.165.24 "hostnamectl"
 
       
