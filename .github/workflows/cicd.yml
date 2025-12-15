@@ -37,6 +37,6 @@ jobs:
            cat mykey.pem
 
            ssh -o StrictHostKeyChecking=no -i mykey.pem ubuntu@13.221.165.24 "docker pull 705307574352.dkr.ecr.us-east-1.amazonaws.com/mediplus:v2"
-           ssh -o StrictHostKeyChecking=no -i mykey.pem ubuntu@13.221.165.24 "docker run -d --name mediplus_v3 -p 80:80 705307574352.dkr.ecr.us-east-1.amazonaws.com/mediplus:v2"
+           ssh -o StrictHostKeyChecking=no -i mykey.pem ubuntu@13.221.165.24 "docker run -d --name mediplus_v2 -p 80:80 705307574352.dkr.ecr.us-east-1.amazonaws.com/mediplus:v2"
 
       
