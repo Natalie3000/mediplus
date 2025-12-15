@@ -22,9 +22,9 @@ jobs:
 
       - name: Build and push Docker image to ECR
         run: |
-          docker build -t mediplus:v3 .
-          docker tag mediplus:v3 705307574352.dkr.ecr.us-east-1.amazonaws.com/mediplus:v3
-          docker push 705307574352.dkr.ecr.us-east-1.amazonaws.com/mediplus:v3
+          docker build -t mediplus:${{ github.run_number }} .
+          docker tag mediplus:${{ github.run_number }} 705307574352.dkr.ecr.us-east-1.amazonaws.com/mediplus:${{ github.run_number }} 
+          docker push 705307574352.dkr.ecr.us-east-1.amazonaws.com/mediplus:${{ github.run_number }} 
 
   deploy:
     runs-on: ubuntu-latest
